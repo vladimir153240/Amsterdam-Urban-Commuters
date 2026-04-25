@@ -2,7 +2,7 @@
 
 ## Quick Start 
 
-This folder contains Parquet-compressed version for Amsterdam Data and 2023 fildered csv dataset for London:
+This folder contains Parquet-compressed version for Amsterdam Data and fildered csv dataset for UK 2023. These two files are uploaded to save memory and reproduce the project via the notebooks in the implementation_notebooks.
 
 ```python
 import pandas as pd
@@ -11,7 +11,7 @@ import pandas as pd
 df_am = pd.read_parquet('data/raw/odin/odin_2023_raw.parquet')
 
 # London (2023 only)
-df_lnd = pd.read_parquet('data/raw/london/raw/UKDA-5340-tab/tab/nts_2023_trip.parquet')
+df_lnd = pd.read_csv('data/raw/london/raw/uk_data_2023.csv')
 ```
 
 **Expected sizes after loading:**
@@ -19,6 +19,8 @@ df_lnd = pd.read_parquet('data/raw/london/raw/UKDA-5340-tab/tab/nts_2023_trip.pa
 - London: 25,188 rows (commuting trips)
 
 ---
+
+For full access of the raw data proceed as per the below:
 
 ## Amsterdam Raw Data
 
